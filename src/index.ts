@@ -1,4 +1,3 @@
-
 import * as fastify from "fastify";
 import * as fastifyBlipp from "fastify-blipp";
 import { Server, IncomingMessage, ServerResponse } from "http";
@@ -18,7 +17,7 @@ const start = async () => {
     await server.listen(3000, "0.0.0.0");
     server.blipp();
   } catch (err) {
-    console.log(err);fy 
+    console.log(err);
     server.log.error(err);
     process.exit(1);
   }
