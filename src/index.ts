@@ -18,7 +18,7 @@ const start = async () => {
     await server.listen(3000, "0.0.0.0");
     server.blipp();
   } catch (err) {
-    console.log(err);
+    console.log(err);fy 
     server.log.error(err);
     process.exit(1);
   }
